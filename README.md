@@ -10,7 +10,7 @@
 # 📝 API Documentation
 
 ##  Player Information API
-API Route = https://free-fire-data.vercel.app/api/data?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/data?region={region}&uid={uid}&key={key}
 
 **Endpoint:** `api/data`
 **key:** `YOUR-KEY`
@@ -20,7 +20,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/data?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/data?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -46,78 +46,203 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```json
 {
   "basicInfo": {
-    "accountId": 2129250963,
+    "accountId": "2129250963",
+    "accountPrefers": {
+      "brPregameShowChoices": [1]
+    },
     "accountType": 1,
-    "bannerId": 901026021,
-    "bpStatus": null,
-    "brMaxRank": 316,
-    "brRank": 2768,
-    "createAt": 1747304828,
-    "csMaxRank": 316,
-    "csRank": 45,
-    "exp": 133627,
-    "headPic": 902000057,
-    "lastLoginAt": 1593158767,
-    "level": 42,
-    "liked": 4957,
-    "nickname": "SOUNAVA 500K",
+    "badgeCnt": 9,
+    "badgeId": "1001000088",
+    "bannerId": "901000262",
+    "createAt": "1593158767",
+    "csMaxRank": 321,
+    "csRank": 321,
+    "csRankingPoints": 90,
+    "exp": "271246",
+    "externalIconInfo": {
+      "showType": 1,
+      "status": 1
+    },
+    "headPic": "902050009",
+    "lastLoginAt": "1757418491",
+    "level": 49,
+    "liked": 9466,
+    "maxRank": 316,
+    "nickname": "GM SOUNAVA",
+    "primePrivilegeDetail": {
+      "accountId": "2129250963",
+      "primeLevel": 1,
+      "privilegeIdList": [16, 20]
+    },
+    "rank": 316,
+    "rankingPoints": 2778,
     "region": "IND",
-    "releaseVersion": "OB48",
+    "releaseVersion": "OB50",
+    "seasonId": 47,
+    "selectOccupations": [
+      {
+        "details": {
+          "key1": 1,
+          "key2": 7,
+          "key3": 6,
+          "key4": 1,
+          "key5": 1
+        },
+        "modeId": 1,
+        "seasonId": 47,
+        "type": 2
+      },
+      {
+        "details": {
+          "key1": 3,
+          "key2": 243,
+          "key3": 154,
+          "key4": 5,
+          "key5": 1
+        },
+        "modeId": 15,
+        "seasonId": 33,
+        "type": 6
+      }
+    ],
     "showBrRank": true,
     "showCsRank": true,
-    "title": 904090024
+    "showRank": true,
+    "title": "904090025",
+    "weaponSkinShows": [
+      "907104303"
+    ]
   },
   "captainBasicInfo": {
-    "accountId": 2129250963,
+    "accountId": "2787909984",
+    "accountPrefers": {
+      "brPregameShowChoices": [1]
+    },
     "accountType": 1,
-    "badgeCnt": 42,
-    "bannerId": 901026021,
-    "brMaxRank": 316,
-    "brRank": 316,
-    "brRankingPoints": 2768,
-    "createAt": 1593158767,
-    "csMaxRank": 305,
-    "csRank": 305,
-    "csRankingPoints": 17,
-    "exp": 133627,
-    "headPic": 902000057,
-    "lastLoginAt": 1747304828,
-    "level": 42,
-    "liked": 4957,
-    "nickname": "SOUNAVA 500K",
+    "badgeCnt": 45,
+    "badgeId": "1001000088",
+    "bannerId": "901026021",
+    "createAt": "1612368377",
+    "csMaxRank": 324,
+    "csRank": 324,
+    "csRankingPoints": 232,
+    "exp": "4838515",
+    "externalIconInfo": {
+      "showType": 1,
+      "status": 1
+    },
+    "extraField_77": 1399,
+    "extraField_78": 1,
+    "headPic": "902000192",
+    "lastLoginAt": "1757428278",
+    "level": 76,
+    "liked": 33703,
+    "maxRank": 324,
+    "nickname": "ㅤGMㅤㅤVISHWA",
+    "primePrivilegeDetail": {
+      "accountId": "2787909984",
+      "primeLevel": 5,
+      "privilegeIdList": [8, 11, 19, 4, 12, 15, 17, 7, 16, 20, 10]
+    },
+    "rank": 324,
+    "rankingPoints": 4975,
     "region": "IND",
-    "releaseVersion": "OB48",
-    "seasonId": 45
+    "releaseVersion": "OB50",
+    "seasonId": 47,
+    "selectOccupations": [
+      {
+        "details": {
+          "key1": 3,
+          "key2": 274,
+          "key3": 163,
+          "key4": 6,
+          "key5": 1
+        },
+        "modeId": 1,
+        "seasonId": 47,
+        "type": 2
+      },
+      {
+        "details": {
+          "key1": 5,
+          "key2": 606,
+          "key3": 524,
+          "key4": 13,
+          "key5": 1
+        },
+        "modeId": 15,
+        "seasonId": 33,
+        "type": 6
+      }
+    ],
+    "showBrRank": true,
+    "showCsRank": true,
+    "title": "904590059",
+    "weaponSkinShows": [
+      "907104418",
+      "912044001",
+      "914044001"
+    ]
   },
-  "clanBasicInfo": [
-    {
-      "capacity": 25,
-      "captainId": 2129250963,
-      "clanId": 3000167557,
-      "clanLevel": 1,
-      "clanName": "〆ᗷᖇᝪᎢᕼᗴᖇ",
-      "memberNum": 5
-    }
-  ],
+  "clanBasicInfo": {
+    "capacity": 55,
+    "captainId": "2787909984",
+    "clanId": "3012174478",
+    "clanLevel": 7,
+    "clanName": "GɅMEㅤMɅSTERS",
+    "memberNum": 49
+  },
   "creditScoreInfo": {
     "creditScore": 100,
-    "periodicSummaryEndTime": 1747564036,
-    "periodicSummaryStartTime": 1747304836,
-    "rewardState": 2
+    "rewardEndAt": "1757498835",
+    "rewardStartAt": "1757239635",
+    "rewardState": 1,
+    "rewardType": 2
+  },
+  "diamondCostRes": {
+    "diamondCost": 390
   },
   "petInfo": {
     "exp": 548,
-    "id": 1300000120,
+    "id": "1300000120",
+    "isSelected": true,
     "level": 4,
-    "nickname": null,
-    "selectedSkillId": 1310000201,
-    "skinId": 1315000010
+    "selectedSkillId": "1315000012",
+    "skinId": "1310000201"
+  },
+  "profileInfo": {
+    "avatarId": "101000001",
+    "clothes": [
+      "203043035",
+      "205043004",
+      "204043004",
+      "211000733",
+      "214000000",
+      "211000124"
+    ],
+    "equipedSkills": [
+      {
+        "skillId": 5506
+      },
+      {
+        "skillId": 501,
+        "slotId": 1
+      },
+      {
+        "skillId": 4806,
+        "slotId": 2
+      },
+      {
+        "skillId": 4901,
+        "slotId": 3
+      }
+    ],
+    "isSelected": true,
+    "isSelectedAwaken": true
   },
   "socialInfo": {
-    "accountId": 2129250963,
-    "brRankShow": 1,
-    "csRankShow": null,
-    "signature": "Sounava777 Never Dies."
+    "accountId": "2129250963",
+    "signature": "ya libliyu vsekh devushek na zemlya"
   }
 }
 ```
