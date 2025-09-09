@@ -248,9 +248,9 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Player Stats API
-API Route = https://free-fire-data.vercel.app/api/stats?region={region}&uid={uid}&key={key}
+API Route = https://stats.ff.deaddos.online/api/{region}?uid={uid}&key={key}
 
-**Endpoint:** `api/stats`
+**Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -258,7 +258,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/stats?region=ind&uid=2180732447&key=KEY123
+GET https://stats.ff.deaddos.online/api/ind?uid=2129250963&key=KEY123
 ```
 
 ### ☑️ Query Parameters
