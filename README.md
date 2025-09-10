@@ -328,9 +328,9 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Likes API
-API Route = https://free-fire-data.vercel.app/api/like?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/likes?region={region}&uid={uid}&key={key}
 
-**Endpoint:** `api/like`
+**Endpoint:** `api/likes`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -338,7 +338,7 @@ This Endpoint Sends 100 Likes to the Player's Account based on the Specified Reg
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/like?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/likes?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -378,7 +378,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Visits API
-API Route = https://free-fire-data.vercel.app/api/visit?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/visit?region={region}&uid={uid}&key={key}
 
 **Endpoint:** `api/visit`
 **key:** `YOUR-KEY`
@@ -388,7 +388,7 @@ This Endpoint Sends 100 Visits to the Player's Account based on the Specified Re
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/visit?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/visit?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -426,7 +426,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Spam API
-API Route = https://free-fire-data.vercel.app/api/spam?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/spam?region={region}&uid={uid}&key={key}
 
 **Endpoint:** `api/spam`
 **key:** `YOUR-KEY`
@@ -436,7 +436,7 @@ This Endpoint Spams 100 Friend Requests to the Player's Account based on the Spe
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/spam?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/spam?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -475,7 +475,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Images API
-API Route = https://free-fire-data.vercel.app/api/images?iconName={iconName}&key={key}
+API Route = https://ff.deaddos.online/api/images?iconName={iconName}&key={key}
 
 **Endpoint:** `api/images`
 **key:** `YOUR-KEY`
@@ -485,7 +485,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/images?iconName=Icon_avatar_hair_cos_eggday2021_headwear_blue&key=KEY123
+GET https://ff.deaddos.online/api/images?iconName=Icon_avatar_hair_cos_eggday2021_headwear_blue&key=KEY123
 ```
 
 ### ☑️ Query Parameters
