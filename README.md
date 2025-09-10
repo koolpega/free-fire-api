@@ -501,9 +501,9 @@ GET https://ff.deaddos.online/api/images?iconName=Icon_avatar_hair_cos_eggday202
 ![Icon_avatar_hair_cos_eggday2021_headwear_blue](https://github.com/realpega/free-fire-api/blob/main/images.png)
 
 ##  Craftland Map Info API
-API Route = https://free-fire-data.vercel.app/api/maps?region={region}&code=%23{CODE}&key={key}
+API Route = https://map-info.craftland.ff.deaddos.online/api/{region}?code={map_code}&key={key}
 
-**Endpoint:** `api/maps`
+**Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -511,7 +511,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/maps?region=sg&code=%23FREEFIREMAPCODE6969&key=KEY123
+GET https://map-info.craftland.ff.deaddos.online/api/sg?code=%23FREEFIREMAPCODE6969&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -519,7 +519,7 @@ GET https://free-fire-data.vercel.app/api/maps?region=sg&code=%23FREEFIREMAPCODE
 | Parameter | Type   | Required | Description                   |
 |-----------|--------|----------|-------------------------------|
 | `region`  | string | Yes      | The region code (`sg`, `ind`, `br`)|
-| `uid`     | int    | Yes      | The user ID                   |
+| `map_code`     | int    | Yes      | The map code                   |
 | `key`     | string | Yes      | Buy Key from https://t.me/TrueClasher4                  |
 
 ### ℹ️ Important Note
@@ -536,117 +536,25 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ### 💬 Example of a Successful Reponse May Look Like this,
 ```json
 {
-  "code": 0,
-  "status": "success",
-  "msg": "",
-  "data": {
-    "region_lang": "SG_en",
-    "start_time": 1,
-    "end_time": 1890713325,
-    "rule": "Garena Free Fire",
-    "region": "SG",
-    "lang": "en",
-    "title": "Garena Free Fire",
-    "android_download_url": "https://play.google.com/store/apps/details?id=com.dts.freefireth&referrer=af_tranid%3DgTVeQgRDoYWAmOvmEZz6Xw%26pid%3DOrganicA%26c%3Dmainpage_AND%26af_web_id%3Da209618f-0ae1-4239-bed0-46bcfb0c9656-c",
-    "ios_download_url": "https://apps.apple.com/US/app/id1300146617?mt=8",
-    "ugc_url": "https://createofficial.garena.com/",
-    "imgs": [
-      "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/BACKGROUND01.png",
-      "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/BACKGROUND02.png",
-      "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/BACKGROUND03.png",
-      "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/BACKGROUND04.png",
-      "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/BACKGROUND05.png"
-    ],
-    "game_icon": "https://dl.dir.freefiremobile.com/common/OB45/CSH/abcdfallstorebanners/appicon/FF_AndroidIcon_512.png",
-    "game_name": "Free Fire: 7th Anniversary!",
-    "transify": {
-      "COMMON_ACCEPT": "ACCEPT",
-      "COMMON_BACK": "Back",
-      "COMMON_CANCEL": "Cancel",
-      "COMMON_CONFIRM": "Confirm",
-      "COMMON_CONTINUE_PURCHASE": "Continue to buy",
-      "COMMON_COPY": "Copy",
-      "COMMON_COPY_FAILED": "Copy Failed",
-      "COMMON_COPY_SUCCESS": "copy successful",
-      "COMMON_EXCHANGE": "redeem",
-      "COMMON_EXCHANGED": "redeemed",
-      "COMMON_FFTOKEN_HINT": "Converted to {num}{ff token icon}",
-      "COMMON_FREE": "free",
-      "COMMON_GEM_CONFIRM": "Spend {cost} gem(s) to purchase {NAME}?",
-      "COMMON_GEM_CONFIRM2": "Spend {cost} gems for {num} spin(s)?",
-      "COMMON_HISTORY_DRAW": "History",
-      "COMMON_HISTORY_NORECORDS": "No records",
-      "COMMON_HISTORY_PURCHASE": "Purchase history",
-      "COMMON_HISTORY_REDEEM": "Redeem history",
-      "COMMON_NO": "No",
-      "COMMON_OWNED": "OWNED",
-      "COMMON_PRIZEPOOL": "Rewards pool",
-      "COMMON_PURCHASE": "Purchase",
-      "COMMON_PURCHASED": "Purchased",
-      "COMMON_QUANTITY_MAX": "max",
-      "COMMON_REDEEM_CONFIRM": "Are you sure to redeem this item?",
-      "COMMON_REJECT": "Decline",
-      "COMMON_RULE": "Rules",
-      "COMMON_SKIP": "Skip animation",
-      "COMMON_SKIPANIMATION_TIP": "Tap anywhere to skip animation",
-      "COMMON_SPIN_AGAIN": "Spin Again",
-      "COMMON_TIPS_ITEM": "The rewards will be sent directly to your vault",
-      "COMMON_TIPS_TOKEN": "tokens have been automatically accumulated",
-      "COMMON_VISIT_GIFT": "Welcome gift",
-      "COMMON_YES": "Yes",
-      "POPUP_NO_REMIND": "Don't remind me again",
-      "POPUP_TITLE_CONGRATULATIONS": "Congratulations!",
-      "POPUP_TITLE_REDEEM": "Congratulation! You got",
-      "POPUP_TITLE_UNIQUE": "The unique items you own",
-      "UNIQUE_BUY_ALREADY_HAVE": "You already own this item, if you purchase it again, it will be converted to FF tokens",
-      "UNIQUE_BUY_ALREADY_HAVE_PART": "You already own some of the item(s) you selected. If you receive again, it will be converted to FF tokens.",
-      "UNIQUE_REDEEM_ALREADY_HAVE": "You already own this item, if you receive it again, it will be converted to FF tokens.",
-      "TOAST_ERROR_CODE": "Unknown error, error code {code}",
-      "TOAST_EVENTOVER": "Event ended",
-      "TOAST_EVENT_CLOSED_AWHILE": "The event is closed temporarily. Please check again later.",
-      "TOAST_EVENT_END": "Event ended",
-      "TOAST_EVENT_NOTOPEN": "Event hasn't started",
-      "TOAST_EXCHANGE_SUCCESS": "Successfully Redeemed",
-      "TOAST_GEM_NOT_ENOUGH": "Insufficient diamonds, please top up and come back again",
-      "TOAST_LOGIN_FAILED": "Login failed",
-      "TOAST_NETWORK_BUSY": "Server busy, please try again later",
-      "TOAST_NETWORK_ERROR": "Network connection error, please try again later",
-      "TOAST_OPERATE_BUSY": "Too many requests, please try again later",
-      "TOAST_PAY_FAILED": "Purchase failed",
-      "TOAST_PURCHASE_SUCCESS": "Purchase Successful",
-      "TOAST_SERVER_BUSY": "Server busy, please try again later",
-      "TOAST_SERVER_NOTWORK": "Service unavailable",
-      "TOAST_SERVER_TIMEOUT": "Service timeout",
-      "TOAST_WRONG_REGION": "This event is not available for your region",
-      "COMMON_CALLBACK": "Join the Fight!",
-      "COMMON_JOIN": "Join",
-      "COMMON_SHOOT": "Tap on the targets",
-      "COMMON_SHOOT_2": "Good Job! To continue, please head to Free Fire!",
-      "UGC_46_MAPSHARE_GOBUTTON": "EXPLORE MORE",
-      "UGC_46_MAPSHARE_PLAYBUTTON": "PLAY NOW",
-      "UGC_46_MAPSHARE_WRONGMESSAGE": "SORRY, THIS MAP IS NOT AVAILABLE AT THE MOMENT.",
-      "UGC_47_MAPSHARE_MAPCODE": "Map Code",
-      "UGC_47_MAPSHARE_NAME": "Creator Name",
-      "UGC_47_MAPSHARE_TOAST1": "Copied successfully",
-      "UGC_47_MAPSHARE_TOAST2": "Failed to copy"
-    },
-    "share_img": "https://dl.dir.freefiremobile.com/common/OB46/CSH/Devs/WebCDN/SOFTFF.jpg",
-    "desc_prefix": "[Free Fire]{desc}",
-    "source_params": {
-      "region": "",
-      "lang": "en",
-      "version": "",
-      "action": "",
-      "map_code": ""
-    }
+  "map_info": {
+    "createAt": "1756209977",
+    "description": "[b][C]SUBSCRIBE ~ [ff00ff] \n[00ff00] [b][00ffff]WITH MANY FEATURES, [b][ffff00] [b][ff0000]YOUTUBE CHANNEL FOR MORE",
+    "lastUpdateAt": "1756209977",
+    "liked": 3,
+    "map_name": "SOLARA-MAP-1PLAYER",
+    "maxPlayTime": 5,
+    "minPlayTime": 5,
+    "nickname": "Neo2A5g3Y5#6",
+    "subscriptions": 12,
+    "uid": "13118106172"
   }
 }
 ```
 
 ##  Player Wishlist API
-API Route = https://free-fire-data.vercel.app/api/wishlist?region={region}&uid={uid}&key={key}
+API Route = http://wishlist.ff.deaddos.online/api/{region}?uid={uid}&key={key}
 
-**Endpoint:** `api/wishlist`
+**Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -654,7 +562,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://free-fire-data.vercel.app/api/wishlist?region=ind&uid=2180732447&key=KEY123
+GET http://wishlist.ff.deaddos.online/api/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -680,126 +588,58 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 
 ```json
 {
-  "items": [
+  "wishlist_items": [
     {
-      "itemId": 102000035,
-      "releaseTime": 1709233149
+      "addTime": "1710238335",
+      "itemId": "203000036"
     },
     {
-      "itemId": 203000036,
-      "releaseTime": 1710238335
+      "addTime": "1706079412",
+      "itemId": "203000981"
     },
     {
-      "itemId": 203000981,
-      "releaseTime": 1706079412
+      "addTime": "1706079412",
+      "itemId": "204033044"
     },
     {
-      "itemId": 204033044,
-      "releaseTime": 1706079412
+      "addTime": "1706079412",
+      "itemId": "205033048"
     },
     {
-      "itemId": 205033048,
-      "releaseTime": 1706079412
+      "addTime": "1706079412",
+      "itemId": "211000411"
     },
     {
-      "itemId": 211000411,
-      "releaseTime": 1706079412
+      "addTime": "1706079412",
+      "itemId": "211000894"
     },
     {
-      "itemId": 211000894,
-      "releaseTime": 1706079412
+      "addTime": "1706079412",
+      "itemId": "214000023"
     },
     {
-      "itemId": 214000023,
-      "releaseTime": 1706079412
+      "addTime": "1710238335",
+      "itemId": "902000003"
     },
     {
-      "itemId": 901040034,
-      "releaseTime": 1727692721
+      "addTime": "1710238335",
+      "itemId": "902040026"
     },
     {
-      "itemId": 902000003,
-      "releaseTime": 1710238335
+      "addTime": "1707398570",
+      "itemId": "904090027"
     },
     {
-      "itemId": 902040026,
-      "releaseTime": 1710238335
+      "addTime": "1706524016",
+      "itemId": "906036010"
     },
     {
-      "itemId": 902040029,
-      "releaseTime": 1710238335
+      "addTime": "1706079412",
+      "itemId": "907102508"
     },
     {
-      "itemId": 902040030,
-      "releaseTime": 1710238335
-    },
-    {
-      "itemId": 903040007,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 903043010,
-      "releaseTime": 1710238335
-    },
-    {
-      "itemId": 904040010,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 904090027,
-      "releaseTime": 1707398570
-    },
-    {
-      "itemId": 905039004,
-      "releaseTime": 1710238335
-    },
-    {
-      "itemId": 906036010,
-      "releaseTime": 1706524016
-    },
-    {
-      "itemId": 907102508,
-      "releaseTime": 1706079412
-    },
-    {
-      "itemId": 907104073,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 907104074,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 907104075,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 907104076,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 907104077,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 909040014,
-      "releaseTime": 1727692721
-    },
-    {
-      "itemId": 909043013,
-      "releaseTime": 1707543814
-    },
-    {
-      "itemId": 911004301,
-      "releaseTime": 1710238335
-    },
-    {
-      "itemId": 912037001,
-      "releaseTime": 1706079412
-    },
-    {
-      "itemId": 921047018,
-      "releaseTime": 1735657844
+      "addTime": "1706079412",
+      "itemId": "912037001"
     }
   ]
 }
