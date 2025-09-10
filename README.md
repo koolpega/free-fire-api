@@ -481,7 +481,7 @@ API Route = https://ff.deaddos.online/api/images?iconName={iconName}&key={key}
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
-This Endpoint Retrieves Player Information based on the Specified Region and User ID.
+This Endpoint Retrieves Images from Free Fire's database based on the Specified Icon Name.
 
 ### 📨 Request Example
 ```http
@@ -507,7 +507,7 @@ API Route = https://map-info.craftland.ff.deaddos.online/api/{region}?code={map_
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
-This Endpoint Retrieves Player Information based on the Specified Region and User ID.
+This Endpoint Retrieves Craftland Map Information based on the Specified Region and Map Code.
 
 ### 📨 Request Example
 ```http
@@ -551,6 +551,91 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 }
 ```
 
+##  Guild Info API
+API Route = https://guild-info.ff.deaddos.online/api/{region}?uid={guest_uid}&password={guest_password}&clanid={guild_id}&key={key}
+
+**Endpoint:** `api/{region}`
+**key:** `YOUR-KEY`
+**Method:** `GET`  
+
+This Endpoint Retrieves Guild Information based on the Specified Region, Clan ID and Guest Account Credentials. For this API to work, the Guest Account should be in the same Guild.
+
+### 📨 Request Example
+```http
+GET https://guild-info.ff.deaddos.online/api/br?uid=12345678&password=ABCD1234EFGH5678XYZ90&clanid=61207059&key=KEY123
+```
+
+### ☑️ Query Parameters
+
+| Parameter | Type   | Required | Description                   |
+|-----------|--------|----------|-------------------------------|
+| `region`  | string | Yes      | The region code (`sg`, `ind`, `br`)|
+| `uid`     | int    | Yes      | The guest account UID                   |
+| `password`| int    | Yes      | The guest account Password                   |
+| `clanid`     | int    | Yes      | The Guild ID                   |
+| `key`     | string | Yes      | Buy Key from https://t.me/TrueClasher4                  |
+
+### ℹ️ Important Note
+
+Query Parameter `SG` is for all regions that come under `clientbp.ggblueshark.com`
+[`SG`, `ID`, `ME`, `VN`, `TH`, `CIS`, `EU`, `TW`, `MY`, `PK`, `BD`]
+
+Query Parameter `IND` is only for India and it comes under `client.ind.freefiremobile.com `
+[`IND`]
+
+Query Parameter `BR` is for all regions that come under `client.us.freefiremobile.com`
+[`BR`, `US`, `NA`, `LATAM`]
+
+### 💬 Example of a Successful Reponse May Look Like this,
+```json
+{
+  "clan_info": {
+    "clanId": "12345678",
+    "clanName": "My Clan",
+    "five": 7,
+    "forty": "1750169275",
+    "fortyone": 1005,
+    "four": "194410341",
+    "nine": 1,
+    "region": "BR",
+    "seven": 46,
+    "signature": "Clan Signature",
+    "six": 55,
+    "thirtyeight": 7,
+    "thirtynine": "202537",
+    "thirtyseven": "54827",
+    "thirtysix": "3906928",
+    "thirtythree": 23,
+    "three": "1536019119",
+    "twenty": "32200",
+    "twentythree": "182189799"
+},
+
+message ClanInfo {
+  uint64 clanId = 1;
+  string clanName = 2;
+  uint64 createAt = 3;
+  uint64 captainId = 4;
+  uint32 clanLevel = 5;
+  uint32 capacity = 6;
+  uint32 memberNum = 7;
+  uint32 nineStillUnknown = 9;
+  string slogan = 12;
+  string region = 13;
+  uint64 twentyStillUnknown = 20;
+  uint64 twentythreeStillUnknown = 23;
+  uint32 rankingPoints = 33;
+  uint64 activityPoints = 36;
+  uint64 weeklyActivityPoints = 37;
+  uint32 thirtyeightStillUnknown = 38;
+  uint64 thirtynineStillUnknown = 39;
+  uint64 fortyStillUnknown = 40;
+  uint32 fortyoneStillUnknown = 41;
+}
+
+//too lazy to update this
+```
+
 ##  Player Wishlist API
 API Route = http://wishlist.ff.deaddos.online/api/{region}?uid={uid}&key={key}
 
@@ -558,7 +643,7 @@ API Route = http://wishlist.ff.deaddos.online/api/{region}?uid={uid}&key={key}
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
-This Endpoint Retrieves Player Information based on the Specified Region and User ID.
+This Endpoint Retrieves Player Wishlist Information based on the Specified Region and User ID.
 
 ### 📨 Request Example
 ```http
