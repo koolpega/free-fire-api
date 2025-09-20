@@ -378,9 +378,9 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Visits API
-API Route = https://ff.deaddos.online/api/visit?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/visit/{region}?uid={uid}&key={key}
 
-**Endpoint:** `api/visit`
+**Endpoint:** `api/visit/{region}`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -388,7 +388,7 @@ This Endpoint Sends 100 Visits to the Player's Account based on the Specified Re
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/visit?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/visit/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -426,9 +426,9 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Spam API
-API Route = https://ff.deaddos.online/api/spam?region={region}&uid={uid}&key={key}
+API Route = https://ff.deaddos.online/api/spam/{region}?uid={uid}&key={key}
 
-**Endpoint:** `api/spam`
+**Endpoint:** `api/spam/{region}`
 **key:** `YOUR-KEY`
 **Method:** `GET`  
 
@@ -436,7 +436,7 @@ This Endpoint Spams 100 Friend Requests to the Player's Account based on the Spe
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/spam?region=ind&uid=2180732447&key=KEY123
+GET https://ff.deaddos.online/api/spam/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
