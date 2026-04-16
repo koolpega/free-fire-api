@@ -1,7 +1,6 @@
 # <a href="README_BR.md">Leia em Português</a>
 # <a href="README_ES.md">Leer en Español</a>
 # <a href="README_RU.md">Читать на Русском языке</a>
-# <a href="README_AR.md">اقرأ باللغة العربية</a>
 # <a href="README_ID.md">Baca dalam bahasa Indonesia</a>
 # <a href="README_VN.md">Đọc bằng tiếng Việt</a>
 
