@@ -6,7 +6,7 @@
 
 <br />
 
-# 📝 API Documentation
+# 📝 API Documentation (OB53)
 
 ##  Player Information API
 API Route = https://ff.ggbluewhale.store/api/data?region={region}&uid={uid}&key={key}
