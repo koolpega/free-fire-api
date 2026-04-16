@@ -9,7 +9,7 @@
 # 📝 API Documentation
 
 ##  Player Information API
-API Route = https://ff.deaddos.online/api/data?region={region}&uid={uid}&key={key}
+API Route = https://ff.ggbluewhale.store/api/data?region={region}&uid={uid}&key={key}
 
 **Endpoint:** `api/data`
 **key:** `YOUR-KEY`
@@ -19,7 +19,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/data?region=ind&uid=2180732447&key=KEY123
+GET https://ff.ggbluewhale.store/api/data?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -50,66 +50,52 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
       "brPregameShowChoices": [1]
     },
     "accountType": 1,
-    "badgeCnt": 9,
-    "badgeId": "1001000088",
+    "badgeCnt": 27,
+    "badgeId": "1001000095",
     "bannerId": "901000262",
     "createAt": "1593158767",
-    "csMaxRank": 321,
-    "csRank": 321,
-    "csRankingPoints": 90,
-    "exp": "271246",
+    "csMaxRank": 311,
+    "csRank": 311,
+    "csRankingPoints": 40,
+    "exp": "363258",
     "externalIconInfo": {
       "showType": 1,
       "status": 1
     },
     "headPic": "902050009",
-    "lastLoginAt": "1757418491",
-    "level": 49,
-    "liked": 9466,
-    "maxRank": 316,
+    "lastLoginAt": "1776332287",
+    "level": 52,
+    "liked": 12905,
+    "maxRank": 321,
     "nickname": "GM SOUNAVA",
+    "pinId": 910040001,
     "primePrivilegeDetail": {
       "accountId": "2129250963",
-      "primeLevel": 1,
-      "privilegeIdList": [16, 20]
+      "primeLevel": 3,
+      "privilegeIdList": [16, 20, 8, 10, 11, 19]
     },
-    "rank": 316,
-    "rankingPoints": 2778,
+    "rank": 321,
+    "rankingPoints": 3643,
     "region": "IND",
-    "releaseVersion": "OB50",
-    "seasonId": 47,
+    "releaseVersion": "OB53",
+    "seasonId": 50,
     "selectOccupations": [
       {
         "details": {
-          "key1": 1,
-          "key2": 7,
-          "key3": 6,
+          "key1": 3,
           "key4": 1,
           "key5": 1
         },
-        "modeId": 1,
-        "seasonId": 47,
-        "type": 2
-      },
-      {
-        "details": {
-          "key1": 3,
-          "key2": 243,
-          "key3": 154,
-          "key4": 5,
-          "key5": 1
-        },
         "modeId": 15,
-        "seasonId": 33,
+        "seasonId": 37,
         "type": 6
       }
     ],
     "showBrRank": true,
     "showCsRank": true,
-    "showRank": true,
     "title": "904090025",
     "weaponSkinShows": [
-      "907104303"
+      "907103017"
     ]
   },
   "captainBasicInfo": {
@@ -118,68 +104,67 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
       "brPregameShowChoices": [1]
     },
     "accountType": 1,
-    "badgeCnt": 45,
-    "badgeId": "1001000088",
-    "bannerId": "901026021",
+    "badgeCnt": 93,
+    "badgeId": "1001000095",
+    "bannerId": "901000253",
     "createAt": "1612368377",
-    "csMaxRank": 324,
-    "csRank": 324,
-    "csRankingPoints": 232,
-    "exp": "4838515",
+    "csMaxRank": 323,
+    "csRank": 323,
+    "csRankingPoints": 143,
+    "exp": "5405701",
     "externalIconInfo": {
       "showType": 1,
       "status": 1
     },
-    "extraField_77": 1399,
-    "extraField_78": 1,
+    "extraField_77": 1479,
     "headPic": "902000192",
-    "lastLoginAt": "1757428278",
-    "level": 76,
-    "liked": 33703,
-    "maxRank": 324,
+    "lastLoginAt": "1776329194",
+    "level": 77,
+    "liked": 37099,
+    "maxRank": 330,
     "nickname": "ㅤGMㅤㅤVISHWA",
     "primePrivilegeDetail": {
       "accountId": "2787909984",
-      "primeLevel": 5,
-      "privilegeIdList": [8, 11, 19, 4, 12, 15, 17, 7, 16, 20, 10]
+      "primeLevel": 2,
+      "privilegeIdList": [10, 16, 20, 21, 8]
     },
-    "rank": 324,
-    "rankingPoints": 4975,
+    "rank": 330,
+    "rankingPoints": 10268,
     "region": "IND",
-    "releaseVersion": "OB50",
-    "seasonId": 47,
+    "releaseVersion": "OB53",
+    "seasonId": 50,
     "selectOccupations": [
       {
         "details": {
           "key1": 3,
-          "key2": 274,
-          "key3": 163,
-          "key4": 6,
+          "key2": 1344,
+          "key3": 665,
+          "key4": 15,
           "key5": 1
         },
         "modeId": 1,
-        "seasonId": 47,
+        "seasonId": 50,
         "type": 2
       },
       {
         "details": {
           "key1": 5,
-          "key2": 606,
-          "key3": 524,
-          "key4": 13,
+          "key2": 219,
+          "key3": 198,
+          "key4": 7,
           "key5": 1
         },
         "modeId": 15,
-        "seasonId": 33,
+        "seasonId": 37,
         "type": 6
       }
     ],
     "showBrRank": true,
     "showCsRank": true,
-    "title": "904590059",
+    "title": "904090014",
     "weaponSkinShows": [
-      "907104418",
-      "912044001",
+      "907104807",
+      "912037002",
       "914044001"
     ]
   },
@@ -189,12 +174,12 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
     "clanId": "3012174478",
     "clanLevel": 7,
     "clanName": "GɅMEㅤMɅSTERS",
-    "memberNum": 49
+    "memberNum": 55
   },
   "creditScoreInfo": {
     "creditScore": 100,
-    "rewardEndAt": "1757498835",
-    "rewardStartAt": "1757239635",
+    "rewardEndAt": "1776395837",
+    "rewardStartAt": "1776136637",
     "rewardState": 1,
     "rewardType": 2
   },
@@ -206,18 +191,18 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
     "id": "1300000120",
     "isSelected": true,
     "level": 4,
-    "selectedSkillId": "1315000012",
+    "selectedSkillId": "1315000010",
     "skinId": "1310000201"
   },
   "profileInfo": {
-    "avatarId": "101000001",
+    "avatarId": "101000015",
     "clothes": [
-      "203043035",
-      "205043004",
-      "204043004",
       "211000733",
-      "214000000",
-      "211000124"
+      "204051010",
+      "205051010",
+      "214051003",
+      "211000124",
+      "203051010"
     ],
     "equipedSkills": [
       {
@@ -241,13 +226,13 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
   },
   "socialInfo": {
     "accountId": "2129250963",
-    "signature": "ya libliyu vsekh devushek na zemlya"
+    "signature": "Battle in Style!"
   }
 }
 ```
 
 ##  Player Stats API
-API Route = https://stats.ff.deaddos.online/api/{region}?uid={uid}&key={key}
+API Route = https://stats.ff.ggbluewhale.store/api/{region}?uid={uid}&key={key}
 
 **Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
@@ -257,7 +242,7 @@ This Endpoint Retrieves Player Information based on the Specified Region and Use
 
 ### 📨 Request Example
 ```http
-GET https://stats.ff.deaddos.online/api/ind?uid=2129250963&key=KEY123
+GET https://stats.ff.ggbluewhale.store/api/ind?uid=2129250963&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -327,7 +312,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Likes API
-API Route = https://ff.deaddos.online/api/likes?region={region}&uid={uid}&key={key}
+API Route = https://ff.ggbluewhale.store/api/likes?region={region}&uid={uid}&key={key}
 
 **Endpoint:** `api/likes`
 **key:** `YOUR-KEY`
@@ -337,7 +322,7 @@ This Endpoint Sends 100 Likes to the Player's Account based on the Specified Reg
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/likes?region=ind&uid=2180732447&key=KEY123
+GET https://ff.ggbluewhale.store/api/likes?region=ind&uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -377,7 +362,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Visits API
-API Route = https://ff.deaddos.online/api/visit/{region}?uid={uid}&key={key}
+API Route = https://ff.ggbluewhale.store/api/visit/{region}?uid={uid}&key={key}
 
 **Endpoint:** `api/visit/{region}`
 **key:** `YOUR-KEY`
@@ -387,7 +372,7 @@ This Endpoint Sends 100 Visits to the Player's Account based on the Specified Re
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/visit/ind?uid=2180732447&key=KEY123
+GET https://ff.ggbluewhale.store/api/visit/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -425,7 +410,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Spam API
-API Route = https://ff.deaddos.online/api/spam/{region}?uid={uid}&key={key}
+API Route = https://ff.ggbluewhale.store/api/spam/{region}?uid={uid}&key={key}
 
 **Endpoint:** `api/spam/{region}`
 **key:** `YOUR-KEY`
@@ -435,7 +420,7 @@ This Endpoint Spams 100 Friend Requests to the Player's Account based on the Spe
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/spam/ind?uid=2180732447&key=KEY123
+GET https://ff.ggbluewhale.store/api/spam/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -474,7 +459,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Images API
-API Route = https://ff.deaddos.online/api/images?iconName={iconName}&key={key}
+API Route = https://ff.ggbluewhale.store/api/images?iconName={iconName}&key={key}
 
 **Endpoint:** `api/images`
 **key:** `YOUR-KEY`
@@ -484,7 +469,7 @@ This Endpoint Retrieves Images from Free Fire's database based on the Specified 
 
 ### 📨 Request Example
 ```http
-GET https://ff.deaddos.online/api/images?iconName=Icon_avatar_hair_cos_eggday2021_headwear_blue&key=KEY123
+GET https://ff.ggbluewhale.store/api/images?iconName=Icon_avatar_hair_cos_eggday2021_headwear_blue&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -500,7 +485,7 @@ GET https://ff.deaddos.online/api/images?iconName=Icon_avatar_hair_cos_eggday202
 ![Icon_avatar_hair_cos_eggday2021_headwear_blue](https://github.com/realpega/free-fire-api/blob/main/images.png)
 
 ##  Craftland Map Info API
-API Route = https://map-info.craftland.ff.deaddos.online/api/{region}?code={map_code}&key={key}
+API Route = https://map-info.craftland.ff.ggbluewhale.store/api/{region}?code={map_code}&key={key}
 
 **Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
@@ -510,7 +495,7 @@ This Endpoint Retrieves Craftland Map Information based on the Specified Region 
 
 ### 📨 Request Example
 ```http
-GET https://map-info.craftland.ff.deaddos.online/api/sg?code=%23FREEFIREMAPCODE6969&key=KEY123
+GET https://map-info.craftland.ff.ggbluewhale.store/api/sg?code=%23FREEFIREMAPCODE6969&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -551,7 +536,7 @@ Query Parameter `BR` is for all regions that come under `client.us.freefiremobil
 ```
 
 ##  Guild Info API
-API Route = https://guild-info.ff.deaddos.online/api/{region}?uid={guest_uid}&password={guest_password}&clanid={guild_id}&key={key}
+API Route = https://guild-info.ff.ggbluewhale.store/api/{region}?uid={guest_uid}&password={guest_password}&clanid={guild_id}&key={key}
 
 **Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
@@ -561,7 +546,7 @@ This Endpoint Retrieves Guild Information based on the Specified Region, Clan ID
 
 ### 📨 Request Example
 ```http
-GET https://guild-info.ff.deaddos.online/api/br?uid=12345678&password=ABCD1234EFGH5678XYZ90&clanid=61207059&key=KEY123
+GET https://guild-info.ff.ggbluewhale.store/api/br?uid=12345678&password=ABCD1234EFGH5678XYZ90&clanid=61207059&key=KEY123
 ```
 
 ### ☑️ Query Parameters
@@ -636,7 +621,7 @@ message ClanInfo {
 ```
 
 ##  Player Wishlist API
-API Route = http://wishlist.ff.deaddos.online/api/{region}?uid={uid}&key={key}
+API Route = http://wishlist.ff.ggbluewhale.store/api/{region}?uid={uid}&key={key}
 
 **Endpoint:** `api/{region}`
 **key:** `YOUR-KEY`
@@ -646,7 +631,7 @@ This Endpoint Retrieves Player Wishlist Information based on the Specified Regio
 
 ### 📨 Request Example
 ```http
-GET http://wishlist.ff.deaddos.online/api/ind?uid=2180732447&key=KEY123
+GET http://wishlist.ff.ggbluewhale.store/api/ind?uid=2180732447&key=KEY123
 ```
 
 ### ☑️ Query Parameters
